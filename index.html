@@ -14,40 +14,43 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="icon" href="favicon.ico">
-
-
+    <script src="scripts/hamburger.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>Tanner Williams</h1>
         <img src="images/tanner_steps_pict.jpg" alt="Profile Image">
+        <button class="hamburger">☰</button> <!-- The hamburger button -->
+        <h1>Tanner Williams</h1>
     </header>
 
-    <nav>
+    <nav class="menu">
         <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
-        <li><a href="chamber/">Chamber</a></li>
-        <li><a href="https://www.byui.edu/">BYU-Idaho</a></li>
-        <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="https://www.byui.edu/">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
         </ul>
-        
     </nav>
 
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
-        <section class="card">
-        <h3>Learning Activities</h3>
-        <ol>
-        <li><a href="lesson2\design.html">Web Design Principles Project</a></li>
-        <li><a href="lesson02\design-principles.html">Design Principles Project</a></li>
-        </ol>
-        </section>
+        <div class="grid-container">
+            <section class="card">
+                <h3>Learning Activities</h3>
+                <ol>
+                    <li><a href="lesson2\design.html">Web Design Principles Project</a></li>
+                    <li><a href="lesson02\design-principles.html">Design Principles Project</a></li>
+                </ol>
+            </section>
+        </div>
 
         <section class="card">
-        <h3>Information</h3>
+            <h3>Information</h3>
         </section>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184213.4548764413!2d-111.95771796176518!3d43.82814658672178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540a4b807a98b1%3A0x4a49d8d1d2181c73!2sRexburg%2C%20ID!5e0!3m2!1sen!2sus!4v1737671452015!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
 
     <footer>
@@ -55,6 +58,5 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
-
 </body>
 </html>
