@@ -57,8 +57,13 @@ header button {
     padding: 0.75rem;
 }
 
+.menu ul li a:focus{
+    outline: 3px solid #ff6347;
+}
+
 .menu ul li a:hover {
     background-color: blanchedalmond;
+    color: black;
 }
 
 .hamburger {
