@@ -15,13 +15,13 @@ button.addEventListener('click', () => {
     deleteButton.textContent = '❌';
     deleteButton.ariaLabel = `Remove ${input.value}`;
     
-    // Add the chapter to the list
+    // Add chapter to list
     li.textContent = input.value;
     
-    // Add the delete button to the list
+    // Add delete button to list
     li.appendChild(deleteButton);
     
-    // Add the item to the list
+    // Add item to list
     list.appendChild(li);
     
     // Add event listener to delete button
@@ -29,7 +29,7 @@ button.addEventListener('click', () => {
         list.removeChild(li);
     });
     
-    // Clear the input and set focus
+    // Clear input and set focus
     input.value = '';
     input.focus();
 });
