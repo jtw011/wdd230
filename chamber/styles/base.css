@@ -1,13 +1,85 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
     margin: 0;
     padding: 0;
 }
 
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+    z-index: 10;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+
+input:checked + .slider {
+    background-color: #4CAF50;
+}
+
+input:checked + .slider:before {
+    transform: translateX(14px);
+}
+
+section {
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid black;
+}
+
+body.dark-mode section {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
 header {
-    background-color: #354a21; 
+    background-color: #354a21;
     color: white;
     text-align: center;
     padding: 20px;
@@ -31,22 +103,11 @@ h1 {
     font-family: 'Montserrat', sans-serif;
 }
 
-section {
-    padding: 10px;
-    margin: 10px;
-    background-color: black;
-    color: white;
-    border-radius: 8px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
 h2 {
     font-family: 'Montserrat', sans-serif;
     color: #FF4500;
     text-align: center;
 }
-
 
 img {
     width: 100%;
@@ -56,8 +117,9 @@ img {
 nav {
     display: grid;
     justify-content: center;
-    background-color: black;
+    background-color: white;
     padding: 10px 0;
+    transition: background-color 0.3s;
 }
 
 nav ul {
@@ -67,14 +129,23 @@ nav ul {
     gap: 1rem;
 }
 
-nav ul li a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 0.75rem;
+body.dark-mode nav {
+    background-color: #222;
 }
 
-nav ul li a:focus{
+nav ul li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 0.75rem;
+    transition: color 0.3s;
+}
+
+body.dark-mode nav ul li a {
+    color: white;
+}
+
+nav ul li a:focus {
     outline: 3px solid #ff6347;
 }
 
@@ -83,6 +154,10 @@ nav ul li a:hover {
     color: black;
 }
 
+body.dark-mode nav ul li a:hover {
+    background-color: #444;
+    color: white;
+}
 
 footer {
     text-align: center;
