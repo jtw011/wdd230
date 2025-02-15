@@ -17,7 +17,7 @@
 </head>
 <body>
     <header>
-        <img src="images/bcc.png" alt="Logo">
+        <img src="images/bcc.webp" alt="Logo">
         <h1>Blackfoot Chamber of Commerce</h1>
         <h3>Strengthening Business, Building Community </h3>
         
@@ -42,7 +42,12 @@
 
     <main>
         <section class="hero">
-            <img src="images\Hero image.jpg" alt="Hero Image">
+            <picture>
+                <source media="(max-width: 1200px)" srcset="images/Hero image.webp">
+                <source media="(max-width: 768px)" srcset="images/week6heroMedium.webp">
+                <source media="(max-width: 320px)" srcset="chamber/images/week6herosmall.webp">
+                <img src="" alt="">
+            </picture>
             <h2>Welcome to Blackfoot Chamber of Commerce</h2>
             
         </section>
@@ -58,10 +63,20 @@
         <section class="spotlight">
             <p>Spotlight Section</p>
         </section>
+
+        <section id="weather">
+            <span id="temp" data-temp="45">45°F</span>
+            <span id="wind-speed" data-wind-speed="10">10 mph</span>
+            <span id="wind-chill">Wind Chill: </span>
+        </div>
+        
+        
+        </section>
     </main>
 
 </body>
 <script src="scripts\dark_mode.js"></script>
+<script src="scripts/windchill.js"></script>
 <footer>
     <p>&copy; <span id="year"></span>Blackfoot Chamber of Commerce, 2025</p>
 </footer>
