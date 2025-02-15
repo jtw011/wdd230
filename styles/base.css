@@ -59,7 +59,7 @@ main {
 	position: absolute;
 	top: 30px;
 	left: 30px;
-	background: radial-gradient(#4D5B97);
+	background: radial-gradient(#4D5B97, white);
 	border: 1px solid rgba(0,0,0,.75);
 	padding: 1.5rem;
 	box-shadow: 0 0 3rem #fff;
@@ -148,6 +148,17 @@ h2 {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1rem;
     background-color: #fff;
+}
+
+.label {
+	font-family: Arial, sans-serif;
+	font-weight: 700;
+}
+
+#visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
 }
 
 .card h3 {
