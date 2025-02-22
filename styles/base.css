@@ -170,7 +170,7 @@ h2 {
 
 .discover-layout {
     display: grid;
-    grid-template-columns: 1fr 2fr;  /* Sidebar takes 1 part, images take 2 parts */
+    grid-template-columns: 1fr 2fr;
     gap: 20px;
     padding: 20px;
 }
