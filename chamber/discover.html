@@ -12,6 +12,9 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="images/bcc.png">
     <meta property="og:url" content="https://jtw011.github.io/wdd230/chamber/">
+    
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css' rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js'></script>
     <link rel="icon" href="images/favico.ico">
     <link rel="stylesheet" href="styles/base.css">
 </head>
@@ -21,66 +24,66 @@
         <h1>Blackfoot Chamber of Commerce</h1>
         <h3>Strengthening Business, Building Community </h3>
         
-    <nav>
-        <button class="hamburger">☰</button>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-
-    <label class="switch">
-        <input type="checkbox" id="darkModeToggle">
-        <span class="slider"></span>
-    </label>
-
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+        </label>
     </header>
-        <main>
-            <div class="discover-layout">
-                <aside class="sidebar">
-                    <div class="info-box">
-                        <h2>Discover Blackfoot</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-        
-                    <div class="image-box">
-                        <h2>Heading</h2>
-                        <img src="images/sidebar-image.jpg" alt="Sidebar Image">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-        
-                    <div class="calendar-box">
-                        <p id="last-visit-message"></p>
-                        <table class="calendar">
-                            <tr>
-                                <th>Su</th> <th>Mo</th> <th>Tu</th> <th>We</th> <th>Th</th> <th>Fr</th> <th>Sa</th>
-                            </tr>
-                            <tr>
-                                <td></td> <td></td> <td></td> <td>1</td> <td>2</td> <td>3</td> <td>4</td>
-                            </tr>
-                        </table>
-                    </div>
-                </aside>
-        
-                <section class="image-gallery">
-                    <img src="images/photo1.jpg" alt="Scenic View" loading="lazy">
-                    <img src="images/photo2.jpg" alt="City View" loading="lazy">
-                    <img src="images/photo3.jpg" alt="Mountain View" loading="lazy">
-                    <img src="images/photo4.jpg" alt="Festival" loading="lazy">
-                    <img src="images/photo5.jpg" alt="Local Market" loading="lazy">
-                    <img src="images/photo6.jpg" alt="Historical Site" loading="lazy">
-                </section>
+    
+    <main class="discover-layout">
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h2>Demographics</h2>
+                <p>Population: 12,999</p>
+                <p>The median household income: $57,951</p>
+                <p>County: Bingham</p>
+
             </div>
+            <div class="sidebar-section">
+                <h2>Events</h2>
+                <p>List of upcoming events in Blackfoot.</p>
+
+
+
+            <div class="sidebar-section calendar-section">
+                <h2>Calendar</h2>
+                <div id="calendar"></div>
+            </div>
+        </aside>
+
+        <section class="image-gallery">
+            <p>Jensens Grove</p>
+            <img src="images/blackfoot_discover.webp" alt="Scenic View" loading="lazy">
+            <p>Potato Museum</p>
+            <img src="images/potato.webp" alt="City View" loading="lazy">
+            <p>Wheelline sprinkler</p>
+            <img src="images/wheelline.webp" alt="Mountain View" loading="lazy">
+            <p>Welcome to Blackfoot sign</p>
+            <img src="images/Welcome_blackfoot.webp" alt="Festival" loading="lazy">
+            <p>Blackfoot WaterTower</p>
+            <img src="images/watertower.webp" alt="Local Market" loading="lazy">
+            <p>Kesslers sign (jokes all the time) </p>
+            <img src="images/Kesslers.webp" alt="Historical Site" loading="lazy">
+        </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="year"></span>Blackfoot Chamber of Commerce, 2025</p>
+        <p>&copy; <span id="year"></span> Blackfoot Chamber of Commerce, 2025</p>
     </footer>
+
+    <script src="scripts/dark_mode.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/dynamic_date.js"></script>
+    <script src="scripts/lastvisit.js"></script>
+    <script src="scripts/fullcalander.js"></script>
 </body>
-<script src="scripts/dark_mode.js"></script>
-<script src="scripts/windchill.js"></script>
-<script src="dynamic_date.js"></script>
-<script src="lastvisit.js"></script>
 </html>
