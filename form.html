@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanner Williams - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="Tanner Williams - WDD 230 - Web Frontend Development - course assignment portal">
+    <meta name="author" content="Tanner Williams">
+    <meta property="og:title" content="Tanner Williams">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/tanner_steps_pict.jpg">
+    <meta property="og:url" content="https://jtw011.github.io/wdd230/">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/hamburger.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/tanner_steps_pict.webp" alt="Profile Image">
+        <button class="hamburger">☰</button>
+        <h1>Tanner Williams</h1>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="https://www.byui.edu/">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
+    
+        </ul>
+    </nav>
+
+    <main>
+        <form action="record.html" method="get" class="wf1">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required 
+                   pattern="[a-zA-Z0-9]{8,}" title="Password must be at least 8 alphanumeric characters.">
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <span id="password-error" class="error"></span>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required 
+                   pattern="[a-zA-Z0-9._%+-]+@byui\.edu" 
+                   title="A valid byui.edu email address.">
+            
+            <label for="rating">Page Rating:</label>
+            <input type="range" id="rating" name="rating" min="1" max="10" step="1" value="5" 
+                   oninput="ratingValue.textContent = this.value">
+            <span id="ratingValue">5</span>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    
+
+    <footer>
+        <p>&copy; <span id="year"></span>Tanner Williams, Idaho</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/passvalidation.js"></script>
+    <script src="scripts/emailvalidation.js"></script>
+    <script src="scripts/pageinput.js"></script>
+</body>
+</html>

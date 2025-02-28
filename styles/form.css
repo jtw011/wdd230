@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #2c3e50;
+    color: White;
+    text-align: center;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns:1fr auto 1fr;
+    align-items: center;
+    gap: 2rem; 
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+header button {
+    background-color: #2c3e50;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+main {
+	max-width: 670px;
+	margin: 0 auto;
+    padding: 1rem;
+}
+
+.hero {
+	margin: 10px auto;
+	position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+	height: 300px;
+}
+
+.hero img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.herolabel {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background: radial-gradient(#4D5B97, white);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 1.5rem;
+	font-family:"Great Vibes", serif;
+}
+
+
+
+.menu {
+    display: grid;
+    justify-content: center;
+    background-color: black;
+    padding: 10px 0;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+.menu ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem;
+}
+
+.menu ul li a:focus{
+    outline: 3px solid #ff6347;
+}
+
+.menu ul li a:hover {
+    background-color: blanchedalmond;
+    color: black;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .menu.responsive ul {
+        display: flex;
+    }
+
+    .hamburger.open {
+        content: "×";
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #1d3557;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.card {
+    margin: 1rem 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.label {
+	font-family: Arial, sans-serif;
+	font-weight: 700;
+}
+
+#visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
+
+.card h3 {
+    color: white;
+    margin-bottom: 1rem;
+    text-align: center;
+    background-color: #2c3e50;
+}
+
+iframe {
+    width: 100%; 
+    height:450px; 
+    border: 0;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+.menu .hide {
+    display: none;
+}
+
+
+.wf1 fieldset{
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.wf1 legend {
+    color: #445ba9;
+    padding: 0 .5rem;
+}
+
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    color: red;
+    font-size: .9rem;
+}
+
+.wf1 div {
+    padding-top: 1rem;
+    color: blue;
+    font-size: .9rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="tel"],
+.wf1 input[type="email"],
+.wf1 input[type="url"],
+.wf1 input[type="date"],
+.wf1 select,
+.wf1 input[type="number"]
+
+{
+    background: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+}
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"]
+{
+    margin-right: 6px;
+}
+
+
+.wf1 input[type="submit"]
+{
+    border: none;
+    background-image: linear-gradient(#9c2c13, #6f200e);
+    color: white;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+
+}
+
+.wf1 input:required 
+{
+    border: solid 2px red;
+}
+
+.wf1 input:required:valid
+{
+    border: solid 2px green;
+}
