@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackfoot Chamber of Commerce</title>
+    <meta name="description" content="Chamber of Commerce website for Blackfoot, ID">
+    <meta name="author" content="Tanner Williams">
+    
+    <meta property="og:title" content="Blackfoot Chamber of Commerce">
+    <meta property="og:description" content="Chamber of Commerce website for Blackfoot, ID">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/bcc.png">
+    <meta property="og:url" content="https://jtw011.github.io/wdd230/chamber/">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header>
+        <img src="images/bcc.webp" alt="Logo">
+        <h1>Blackfoot Chamber of Commerce</h1>
+        <h3>Strengthening Business, Building Community</h3>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+        </label>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Join the Chamber</h2>
+            <form method="get" action="thankyou.html" class="form-start">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                
+                <label for="title">Title/Position:</label>
+                <input type="text" id="title" name="title" required pattern="[A-Za-z\-\s]{7,}">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="example@domain.com">
+                
+                <label for="phone">Mobile Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="business">Business/Organization Name:</label>
+                <input type="text" id="business" name="business" required>
+                
+                <label for="membership">Membership Level:</label>
+                <select id="membership" name="membership" required>
+                    <option value="np">NP Membership (Non-Profit, No Fee)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+                
+                <label for="description">Business Description:</label>
+                <textarea id="description" name="description"></textarea>
+                
+                <input type="hidden" id="timestamp" name="timestamp">
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+        
+        <section class="membership-benefits">
+            <h2>Membership Benefits</h2>
+            <table class="form-start">
+                <thead>
+                    <tr>
+                        <th>Membership Level</th>
+                        <th>Benefits</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>NP Membership</td>
+                        <td>Free listing in directory.</td>
+                    </tr>
+                    <tr>
+                        <td>Bronze Membership</td>
+                        <td>Includes event discounts and networking opportunities.</td>
+                    </tr>
+                    <tr>
+                        <td>Silver Membership</td>
+                        <td>Includes advertising and training sessions.</td>
+                    </tr>
+                    <tr>
+                        <td>Gold Membership</td>
+                        <td>Premium spotlight advertising and exclusive events.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+<script src="scripts/dark_mode.js"></script>
+<script src="scripts/windchill.js"></script>
+<script src="scripts/timestamp.js"></script>
+<footer>
+    <p>&copy; <span id="year"></span> Blackfoot Chamber of Commerce, 2025</p>
+</footer>
+</html>
