@@ -312,7 +312,7 @@ footer {
     padding: 10px;
     background-color: #354a21;
     color: white;
-    position: flex;
+    display: flex;
     width: 100%;
     bottom: 0;
 }
