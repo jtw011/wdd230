@@ -1,0 +1,45 @@
+{
+    "wardInformation": {
+    "familyName": "Jefferson",
+    "moveInDate": "2022-03-15",
+    "numberOfPeople": 7,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "Jeff Jefferson",
+        "gender": "Male",
+        "birthdate": "1985-05-20"
+      },
+      {
+        "name": "Jane Jefferson",
+        "gender": "Female",
+        "birthdate": "1988-11-12"
+      },
+      {
+        "name": "David Jefferson",
+        "gender": "Male",
+        "birthdate": "2010-02-03"
+      },
+      {
+        "name": "Emily Jefferson",
+        "gender": "Female",
+        "birthdate": "2012-08-27"
+      },
+      {
+        "name": "Michael Jefferson",
+        "gender": "Male",
+        "birthdate": "2015-04-10"
+      },
+      {
+        "name": "Sophia Jefferson",
+        "gender": "Female",
+        "birthdate": "2018-09-18"
+      },
+      {
+        "name": "Elijah Jefferson",
+        "gender": "Male",
+        "birthdate": "2020-12-05"
+      }
+    ]
+    }
+  }
