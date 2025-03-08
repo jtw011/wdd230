@@ -1,0 +1,66 @@
+[
+    {
+      "name": "Bingham Memorial Hospital",
+      "address": "98 Poplar St, Blackfoot, Idaho",
+      "phone": "1(208)-777-3300",
+      "website": "https://binghammemorial.org/",
+      "image": "images/BMH Hospital Entrance 2015 B.jpg",
+      "membershipLevel": "Gold",
+      "otherInfo": "Great Hospital."
+    },
+    {
+      "name": "Grove Creek Medical Center",
+      "address": "350 N Meridian St, Blackfoot, ID",
+      "phone": "1(208)-777-3300",
+      "website": "https://www.grovecreekmc.org/",
+      "image": "images/GCMC.jpg",
+      "membershipLevel": "Silver",
+      "otherInfo": "Medical center"
+    },
+    {
+      "name": "Glanbia Nutritionals",
+      "address": "295 S Ash St, Blackfoot, ID",
+      "phone": "1(208)-777-3300",
+      "website": "N/A",
+      "image": "images/GN.jpg",
+      "membershipLevel": "Platinum",
+      "otherInfo": "Nutrition"
+    },
+    {
+      "name": "Teton house",
+      "address": "80 N Broadway St, Blackfoot, ID",
+      "phone": "1(208)-777-3300",
+      "website": "http://tetonhouserestaurant-blackfoot.com/",
+      "image": "images/Teton-house.jpg",
+      "membershipLevel": "Bronze",
+      "otherInfo": "Great Resteraunt"
+    },
+    {
+      "name": "Spudnik Equipment Co",
+      "address": "584 W 100 Rd N, Blackfoot, ID",
+      "phone": "1(208)-777-3300",
+      "website": "https://www.spudnik.com/",
+      "image": "images/Sputnik.jpg",
+      "membershipLevel": "Gold",
+      "otherInfo": "Potatoes!."
+    },
+    {
+      "name": "Basic American Foods",
+      "address": "415 W Collins Rd, Blackfoot, ID",
+      "phone": "1(208)-777-3300",
+      "website": "http://www.baf.com/",
+      "image": "images/BAF.jpg",
+      "membershipLevel": "Silver",
+      "otherInfo": "Food Processing"
+    },
+    {
+      "name": "Premier Technology",
+      "address": "1858 West Bridge St, Blackfoot, ID",
+      "phone": "1(208)-777-3300",
+      "website": "https://www.ptius.net/",
+      "image": "images/premier.jpg",
+      "membershipLevel": "Platinum",
+      "otherInfo": "Metal manufacturer."
+    }
+  ]
+  
