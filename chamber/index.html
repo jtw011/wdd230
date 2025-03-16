@@ -38,6 +38,12 @@
     </header>
 
     <main>
+
+        <div id="meetBanner" class="banner">
+            <p>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m.! <button onclick="closeBanner()">Close</button></p>
+          </div>
+    </section>
+    
         <section class="hero">
             <picture>
                 <source media="(max-width: 1920px)" srcset="images/week6heroDesktop.webp">
@@ -62,17 +68,25 @@
         </section>
 
         <section id="weather">
-            <p><strong>Weather</strong></p>
-            <span id="temp" data-temp="45">45°F</span>
-            <span id="wind-speed" data-wind-speed="10">10 mph</span>
-            <span id="wind-chill">Wind Chill: </span>
+            <h2>Current Weather</h2>
+            <p id="current-temp"></p>
+            <figure>
+                <img id="weather-icon" alt="" />
+                <figcaption></figcaption>
+            </figure>
+        
+            <!-- 3-Day Forecast Section -->
+            <div id="forecast"></div> <!-- This is where the 3-day forecast will be displayed -->
         </section>
+        
 
     </main>
 
 </body>
 <script src="scripts/dark_mode.js"></script>
 <script src="scripts/windchill.js"></script>
+<script src="scripts/weather.js"></script>
+<script src="scripts/banner.js"></script>
 <footer>
     <p>&copy; <span id="year"></span>Blackfoot Chamber of Commerce, 2025</p>
 </footer>
