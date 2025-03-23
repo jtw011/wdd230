@@ -24,9 +24,11 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="join.html">Join Us</a></li>
-            <li><a href="directory.html">Directory</a></li>
             <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join Us</a></li>
+            
+            
         </ul>
     </nav>
 
@@ -54,16 +56,9 @@
             
         </section>
 
-        <section class="call">
-            <p><strong>Call</strong></p>
-        </section>
-
         <section class="event">
-            <p><strong>Current Events</strong></p>
-        </section>
-
-        <section class="spotlight">
-            <p><strong>Spotlight</strong></p>
+            <p><strong>Events</strong></p>
+            <p>No upcoming events</p>
         </section>
 
         <section id="weather">
@@ -74,18 +69,32 @@
                 <figcaption></figcaption>
             </figure>
         
-            <!-- 3-Day Forecast Section -->
-            <div id="forecast"></div> <!-- This is where the 3-day forecast will be displayed -->
+            <div id="forecast"></div> 
         </section>
+
+        <section class="spotlight">
+            <p><strong>Spotlight</strong></p>
+            <div id="directory" class="grid"></div>
+        </section>
+
         
 
+        <section class="call">
+            <h2>Blackfoot Chamber of Commerce</h2>
+            <p>Address: 70 W Judicial Ave, Blackfoot, Idaho</p>
+            <p>Email: chamber@blackfootchamber.org</p>
+            <p>Mail: P.O. Box 801, Blackfoot, ID</p>
+            <p>Phone: (208) 785-0510</p>
+        </section>
     </main>
+
 
 </body>
 <script src="scripts/dark_mode.js"></script>
 <script src="scripts/windchill.js"></script>
 <script src="scripts/weather.js"></script>
 <script src="scripts/banner.js"></script>
+<script src="scripts/fetchthree.js"></script>
 <footer>
     <p>&copy; <span id="year"></span>Blackfoot Chamber of Commerce, 2025</p>
 </footer>
