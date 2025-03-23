@@ -93,7 +93,7 @@ header {
 }
 
 header img {
-    width: 25%;
+    width: 20%;
     height: auto;
 }
 
@@ -105,11 +105,6 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     color: #FF4500;
     text-align: center;
-}
-
-img {
-    width: fit-content;
-    height: 500px;
 }
 
 nav {
@@ -423,7 +418,7 @@ body.dark-mode .menu button:hover {
     top: 0;
     width: 100%;
     z-index: 9999;
-  }
+}
 
 #forecast ul {
     list-style-type: none;
@@ -444,4 +439,11 @@ body.dark-mode .menu button:hover {
 #forecast img {
     width: 40px;
     height: 40px;
+}
+
+
+#directory img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
