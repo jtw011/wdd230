@@ -72,6 +72,13 @@ main {
     margin-top: 1rem;
 }
 
+main a{
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
 section {
     border: 2px solid black;
     border-radius: 5px;
@@ -177,6 +184,9 @@ footer {
     text-align: center;
     padding: 1.5rem 0;
     margin-top: 2rem;
+    width: 100%;
+    position: relative;
+    left: 0;
 }
 
 footer p {
