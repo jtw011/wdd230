@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Reservations</title>
+</head>
+<body>
+    <header>
+        <h1>Reservations</h1>
+    </header>
+    <nav>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rentals.html">Rentals</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </nav>
+    <main>
+        <section class="rental-agreement">
+            <h2>Rental Agreement</h2>
+            <p>Please read and agree to the terms and conditions before submitting your reservation.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel nisi nec lorem tincidunt vehicula.</p>
+        </section>
+        <section class="form-container">
+            <h2>Rental Details</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div>
+                    <label for="period">Rental Period:</label>
+                    <input type="text" id="period" name="period" placeholder="e.g., 3 days" required>
+                </div>
+                <div>
+                    <label for="rental-type">Rental Type:</label>
+                    <select id="rental-type" name="rental-type" required>
+                        <option value="">Select...</option>
+                        <option value="car">Car</option>
+                        <option value="bike">Bike</option>
+                        <option value="scooter">Scooter</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="number">Number of Rentals:</label>
+                    <input type="number" id="number" name="number" min="1" required>
+                </div>
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g., 123-456-7890" required>
+                </div>
+                <div>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="state-country">Home State/Country:</label>
+                    <input type="text" id="state-country" name="state-country" required>
+                </div>
+                <div>
+                    <label for="cruise-line">Cruise Line (if applicable):</label>
+                    <input type="text" id="cruise-line" name="cruise-line">
+                </div>
+                <div>
+                    <label for="comments">Special Accommodations/Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="e.g., Drop-off location"></textarea>
+                </div>
+                <button type="submit">Submit Reservation</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

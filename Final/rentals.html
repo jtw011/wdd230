@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoots | Rentals</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script defer src="scripts/rentalFetch.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Scoots Rentals</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Rental Options & Pricing</h1>
+        <section>
+            <h2>Available Rentals</h2>
+            <div id="rental-options">
+                <!-- Rental options will be dynamically loaded here -->
+            </div>
+        </section>
+        <section>
+            <h2>Rental Prices</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Max Persons</th>
+                        <th>Reservation (Half Day)</th>
+                        <th>Reservation (Full Day)</th>
+                        <th>Walk-In (Half Day)</th>
+                        <th>Walk-In (Full Day)</th>
+                    </tr>
+                </thead>
+                <tbody id="rental-table">
+                    <!-- Data will be dynamically loaded here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Scoots Rentals</p>
+    </footer>
+</body>
+</html>

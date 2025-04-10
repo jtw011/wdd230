@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoots Scooter Rentals</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script defer src="scripts/banner.js"></script>
+    <script defer src="scripts/weather.js"></script>
+</head>
+<body>
+    <header>
+        <div class="banner" id="temp-banner"></div>
+        <h1>Scoots Scooter Rentals</h1>
+        <nav>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to Scoots 🛵</h1>
+            <p>Explore Cozumel the fun way!</p>
+            <a href="reservations.html" class="cta">Make a Reservation</a>
+        </section>
+
+        <section class="rental-summary">
+            <h2>Rental Types</h2>
+            <ul>
+                <li>Honda Metropolitan (49cc) – 1 person</li>
+                <li>Honda Dio (110cc) – 2 person</li>
+                <li>Honda PCX150 (149cc) – 2 person</li>
+                <li>Honda Pioneer 1000 ATV – 4 person</li>
+                <li>Jeep Wrangler (2-door & 4-door) – 4–5 person</li>
+            </ul>
+        </section>
+
+        <section class="weather">
+            <h2>Current Weather</h2>
+            <p id="weather-main"></p>
+            <p id="weather-desc"></p>
+            <img id="weather-icon" alt="Weather Icon" />
+            <p>Temperature: <span id="temp"></span>°C</p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>Tomorrow @ 3PM: <span id="forecast"></span>°C</p>
+        </section>
+
+        <section class="social-media">
+            <h2>Follow Us</h2>
+            <p>Stay connected with us on <a href="#">Social Media</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Scoots Rentals. All rights reserved.</p>
+    </footer>
+</body>
+</html>
